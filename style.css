@@ -29,6 +29,12 @@ nav {
     font-size: 29px;
 }
 
+.timer{
+    display: grid;
+    grid-auto-flow: column;
+    color: #514988;
+}
+
 .countdown{
     width: 50%;
     color: #E33881;
