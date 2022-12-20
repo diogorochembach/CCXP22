@@ -1,8 +1,10 @@
-body {
+* {
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
 }
+
 
 nav {
     background-color: #FFD900;
@@ -10,66 +12,137 @@ nav {
     margin-bottom: 0px;
 }
 
-#reviva {
-    background-color: #514988;
-    color: #FFFFFF;
+main{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.section-left {
+    display: inline-block;
+    background: #514988;
     text-align: center;
-    width: 50%;
-    height: 680px;
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 7px 50px;
-        
+    height: 500px;
+    padding-right: 45px;
+    padding-top: 30px;
+
 }
 
 .revivaOEpico {
     color: #FFD900;
-    
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 85px;
+
 }
 
-.textoMaior {
+.periodo {
+    color: #ffffff;
+    font-weight: 400;
     font-size: 29px;
+
 }
 
-.timer{
+p {
+    color: #ffffff;
+    padding-left: 60px;
+    padding-right: 3px;
+    padding-top: 30px;
+    line-height: 25px;
+    font-weight: 400;
+
+}
+
+.section-right {
+    display: inline-block;
+    color: #514988;
+}
+
+.timer {
     display: grid;
     grid-auto-flow: column;
     color: #514988;
     text-align: right;
+    font-size: 33px;
 }
 
-.countdown{
-    width: 50%;
+#dia {
+    color: #514988;
+    margin-left: 15px;
+}
+
+#hora {
+    color: #514988;
+}
+
+#minuto {
+    color: #514988;
+}
+
+#segundo {
+    color: #514988;
+}
+
+.indicador {
+    color: #514988;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 0px;
+    padding-left: 0px;
+}
+
+h3 {
     color: #E33881;
-    width: 50%;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 36px;
+    margin-left: 25px;
+    padding-bottom: 10px;
+    padding-top: 15px;
 }
 
-.alerquina{
-    width: 50px;
+.teste {
+    display: inline-block;
+    width: 650px;
+    margin-left: 15px;
 }
 
-.textoCard{
-    color:#FFD900;
+.alerquina {
+    display: inline-block;
+    margin-left: 15px;
+    width: 700px;
+
+}
+
+.textoCard {
+    color: #FFD900;
     margin-left: 20px;
     font-size: 26px;
+    padding-bottom: 30px;
 }
 
-.card{
+.card {
     display: flex;
+    cursor: pointer;
+    padding-bottom: 15px;
+
 }
 
-button{
+button {
     background-color: #514988;
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 40px;
-    width: 596px;
-    height: 120px;
+    font-size: 30px;
+    width: 400px;
+    height: 100px;
     border-radius: 10px;
     border: none;
     margin-bottom: 30px;
     margin-left: 30px;
     margin-top: 30px;
+    cursor: pointer;
 
+}
+
+button:hover {
+    background: #FFD900;
 }
