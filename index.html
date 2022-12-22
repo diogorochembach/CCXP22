@@ -14,40 +14,40 @@
         <nav> <img src="./ccxp22.svg" alt=""></nav>
     </header>
 
-<main>
-    <section class="section-left">
-        <h1 class="revivaOEpico">REVIVA O ÉPICO</h1>
-        <h3 class="periodo">DE 27 A 31 DE DEZEMBRO 2022</h3>
-        <P class="textoMaior">Você consegue sentir? É aquela sensação de finalmente poder falar em voz alta:
-            "estamos em
-            casa". Sim, em dezembro de 2022, teremos a volta da CCXP física. Mas não será
-            qualquer CCXP, vai ser a maior de todos os tempos. Prepare-se para visitar seus universos favoritos,
-            explorar o Artists' Valley, se emocionar nos auditórios e encontrar aventuras épicas a cada passo pelos
-            nossos corredores.</P>
-    </section>
+    <main>
+        <section class="section-left">
+            <h1 class="revivaOEpico">REVIVA O ÉPICO</h1>
+            <h3 class="periodo">DE 27 A 31 DE DEZEMBRO 2022</h3>
+            <P class="textoMaior">Você consegue sentir? É aquela sensação de finalmente poder falar em voz alta:
+                "estamos em
+                casa". Sim, em dezembro de 2022, teremos a volta da CCXP física. Mas não será
+                qualquer CCXP, vai ser a maior de todos os tempos. Prepare-se para visitar seus universos favoritos,
+                explorar o Artists' Valley, se emocionar nos auditórios e encontrar aventuras épicas a cada passo pelos
+                nossos corredores.</P>
+        </section>
 
-    <section class="section-right">
-        <div class="timer">
+        <section class="section-right">
+            <div class="timer">
 
-            <h1 id="dia">00</h1>
-            <p class="indicador">D</p>
+                <h1 id="dia">00</h1>
+                <p class="indicador">D</p>
 
 
-            <h1 id="hora">00</h1>
-            <p class="indicador">H</p>
+                <h1 id="hora">00</h1>
+                <p class="indicador">H</p>
 
-            <h1 id="minuto">00</h1>
-            <p class="indicador">M</p>
+                <h1 id="minuto">00</h1>
+                <p class="indicador">M</p>
 
-            <h1 id="segundo">00</h1>
-            <p class="indicador">S</p>
-        </div>
+                <h1 id="segundo">00</h1>
+                <p class="indicador">S</p>
+            </div>
 
-        <h3>PARA A MAIOR CCXP DE TODOS OS TEMPOS</h3>
+            <h3>PARA A MAIOR CCXP DE TODOS OS TEMPOS</h3>
 
-        <video class="teste" controls src="./Arlequina.mp4"></video>
-    </section>
-</main>
+            <video class="teste" controls src="./Arlequina.mp4"></video>
+        </section>
+    </main>
 
     <!-- <section class="video">
         <div class="alerquina">
@@ -62,35 +62,21 @@
     <footer>
         <h3 class="textoCard"> AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h3>
         <div class="card">
-            <div><img 
-                src="./qui.svg" 
-                onmouseover="highlightCard('#quinta')" 
-                onmouseout="highlightCard('#quinta')" 
-                alt="qui" 
-                id="quinta">
+            <div><img src="./qui.svg" onclick="selectCard('#quinta')" onmouseover="highlightCard('#quinta')"
+                    onmouseout="highlightCard('#quinta')" alt="qui" id="quinta">
             </div>
-            <div><img 
-                src="./sex.svg" 
-                onmouseover="highlightCard('#sexta')" 
-                onmouseout="highlightCard('#sexta')" 
-                alt="sex" 
-                id="sexta">
+            <div><img src="./sex.svg" onclick="selectCard('#sexta')" onmouseover="highlightCard('#sexta')"
+                    onmouseout="highlightCard('#sexta')" alt="sex" id="sexta">
             </div>
-            <div><img 
-                src="./esgotado.svg" 
-                onmouseover="highlightCard('#sabado')" 
-                onmouseout="highlightCard('#sabado')" 
-                alt="sab" 
-                id="sabado">
+            <div><img src="./esgotado.svg" onclick="selectCard('#sabado')" onmouseover="highlightCard('#sabado')"
+                    onmouseout="highlightCard('#sabado')" alt="sab" id="sabado">
             </div>
-            <div><img 
-                src="./dom.svg" 
-                onmouseover="highlightCard('#domingo')" 
-                onmouseout="highlightCard('#domingo')" 
-                alt="dom" 
-                id="domingo">
+            <div><img src="./dom.svg" onclick="selectCard('#domingo')" onmouseover="highlightCard('#domingo')"
+                    onmouseout="highlightCard('#domingo')" alt="dom" id="domingo">
             </div>
-            <button> GARANTA O SEU! </button>
+            <div id="compra">
+                <button onclick="showSelectedCards()"> GARANTA O SEU! </button>
+            </div>
         </div>
     </footer>
 
